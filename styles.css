@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+  
+    max-width: 80%;
+    margin: 200px auto;
+    
+}
+
+.panel {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 30px;
+    
+    background-repeat: no-repeat;
+    color: white;
+    cursor: pointer;
+    height: 70%;
+    width: 100px;
+    margin: 10px;
+
+}
+
+
+.explore {
+    background-image: url("/img/astronomy-1867616_960_720.jpg");
+
+   
+}
+.mount {
+    background-image: url("/img/mountain-landscape-2031539_960_720.webp");
+    color: black;
+   
+}
+.explore {
+    background-image: url("/img/astronomy-1867616_960_720.jpg");
+   
+}
+.explore {
+    background-image: url("/img/astronomy-1867616_960_720.jpg");
+   
+}
+.explore {
+    background-image: url("/img/astronomy-1867616_960_720.jpg");
+   
+}
+.explore {
+    background-image: url("/img/astronomy-1867616_960_720.jpg");
+   
+}
