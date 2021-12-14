@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgba(112, 102, 90, 0.699);
+}
+
 .container {
     display: flex;
     height: 70vh;
@@ -16,21 +20,39 @@
 }
 
 .panel {
-  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 20px;
     border-radius: 30px;
-    
     background-repeat: no-repeat;
     color: white;
     cursor: pointer;
     height: 70%;
-    width: 100px;
+    width: 100px;;
     margin: 10px;
+    position: relative;
+    transition: 0.5s ease-in;
+     box-shadow: inset 0 0 0 1000px rgba(21, 21, 22, 0.247); 
+}
 
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    margin: 0;
+    opacity: 0;
+
+}
+
+.panel.active {
+width: 400px;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.9s ease-in;
 }
 
 
@@ -41,22 +63,37 @@
 }
 .mount {
     background-image: url("/img/mountain-landscape-2031539_960_720.webp");
-    color: black;
+    color: rgb(255, 255, 255);
    
 }
-.explore {
-    background-image: url("/img/astronomy-1867616_960_720.jpg");
+.ocean {
+    background-image: url("/img/waves-3473335_960_720.jpg");
+    
    
 }
-.explore {
-    background-image: url("/img/astronomy-1867616_960_720.jpg");
+.sun {
+    background-image: url("/img/sunset.webp");
    
 }
-.explore {
-    background-image: url("/img/astronomy-1867616_960_720.jpg");
+.rain {
+    background-image: url("/img/rain.jpg");
    
 }
-.explore {
-    background-image: url("/img/astronomy-1867616_960_720.jpg");
+.lightning {
+    background-image: url("/img/lightning.jpg");
    
+}
+
+
+@media(max-width: 480px) {
+.container {
+    max-width: 100%;
+
+}
+
+
+.mount,
+.ocean {
+    display: none;
+}
 }
